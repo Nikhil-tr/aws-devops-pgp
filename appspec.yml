@@ -1,0 +1,8 @@
+version: 0.0
+os: linux	
+ 
+hooks:	
+  BeforeInstall:	 
+    - location: /templates/commands
+      timeout: 300	     
+      runas: root	
