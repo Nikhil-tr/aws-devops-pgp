@@ -17,8 +17,9 @@ spec:
        app: projapp
     spec:
      containers:
-      - name: cont1
-        image: projapp:latest
+       - name: cont1
+         image: projapp:latest
+         imagePullPolicy: Never
 ---
 kind: Service
 apiVersion: v1
